@@ -2,6 +2,7 @@ import CTA from '@/components/ui/CTA'
 import CourseCards from '@/components/ui/CourseCards'
 import CourseList from '@/components/ui/CourseList'
 import { Button } from '@/components/ui/button'
+import { recentSessions } from '@/constants'
 import React from 'react'
 
 /**
@@ -48,7 +49,11 @@ const Page = () => {
       {/* Section with a list of all courses */}
       <section className="home-section">
         {/* List of courses */}
-        <CourseList />
+        <CourseList 
+          title = "Recently Completed Courses"
+          companions = {recentSessions}
+          classNames = "w-2/3  max:lg:w-full"
+        />
         {/* Call-to-action */}
         <CTA />
       </section>
