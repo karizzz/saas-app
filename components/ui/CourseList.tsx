@@ -34,7 +34,7 @@ const CourseList = ({ title, companions, classNames }: CompanionListProps) => {
                     {companions.map(({ id, name, topic, subject, duration }) => (
                         <TableRow key={id}>
                             <TableCell>
-                            <Link href={`/companions/${id}`}>
+                            <Link href={`/CourseLibrary/${id}`}>
                                     <div className="flex items-center gap-2">
                                         <div className="size-[72px] flex items-center justify-center rounded-lg max-md:hidden" style={{ backgroundColor: getSubjectColor(subject) }}>
                                             <Image

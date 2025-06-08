@@ -12,6 +12,8 @@ import {
 
 import Image from 'next/image'
 
+import Link from 'next/link'
+
 const CTA = () => {
   return (
     <article className="cta-section">
@@ -32,7 +34,10 @@ const CTA = () => {
       
       
       <button className = 'btn-primary w-full justify-center bg-red-400 hover:bg-red-300 hover:bg-black text-white font-bold'>
-        Build New Companion
+        <Image src ="/icons/plus.svg" alt = "plus" width = {12.5} height = {12.5}/>
+        <Link href = "/CourseLibrary/newCourseBuild">
+        <p>Build New Companion</p>
+        </Link>
       </button>
     </article>
   )
